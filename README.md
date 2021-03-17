@@ -10,7 +10,7 @@
 
     El promedio ponderado de las tareas se calcula de la siguiente manera:
 
-    **T = ( 1xT<sub>0</sub> + 2×T<sub>1</sub> + 3×T<sub>3</sub> + 3×T<sub>4</sub> ) / 9**
+    **T = ( 1xT<sub>0</sub> + 2×T<sub>1</sub> + 3×T<sub>2</sub> + 3×T<sub>3</sub> ) / 9**
 
     El promedio de las actividades corresponderá a las 4 mejores notas entre actividades sumativas (son 4) y la nota de actividades formativas, que cuenta como una actividad sumativa más:
 
