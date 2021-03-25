@@ -14,7 +14,7 @@ assignees: ''
 
 * [ ] Leí las reglas del foro (https://github.com/IIC2233/syllabus/issues/1)
 * [ ] Busqué en las *issues* si ya preguntaron mi duda y no encontré nada parecido (https://github.com/IIC2233/syllabus/issues)
-* [ ] Revisé el compilado de dudas de la tarea y no encontré una *issue* similar a la mía (https://github.com/IIC2233/syllabus/issues/44)
+* [ ] Revisé el compilado de dudas de la tarea y no encontré una *issue* similar a la mía (https://github.com/IIC2233/syllabus/issues/45)
 * [ ] Mi duda no se trata sobre una librería, *built-in* o mala práctica, ya que eso se pregunta en la *issue* creada para ello.
 * [ ] Mi duda no se trata de un tema administrativo o personal, ya que en ese caso debo contactar a mi profe, al Jefe de Bienestar o al correo del curso (https://iic2233.github.io/contacto/)
 * [ ] Utilizaré un título descriptivo y llenaré correctamente esta plantilla
