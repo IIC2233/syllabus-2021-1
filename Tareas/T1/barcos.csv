@@ -1,0 +1,41 @@
+nombre,tipo,costo de mantención,velocidad base,pasajeros,carga máxima,moneda de origen,tripulación,carga
+La Nao Victoria,Pasajero,760,37,765,500,BRL,William Oliver;Pamela Wheeler;Eric Salinas,99;69;167;79
+El Escorial de los mares,Pasajero,760,37,792,500,BRL,Brandi Ellison,173;138;181
+Inferno,Carguero,1552,49,351,630,HKD,Brian Richards;David Fisher,30;188
+El Golden Hind,Carguero,1552,36,397,630,HKD,Frances Robinson,84;28;11;27
+El Sirenita,Pasajero,130,36,767,500,USD,George Davis,92;12;113;120
+Galeón,Carguero,1250,49,332,630,DKK,Kristina Villanueva;Kimberly Wilson,67;53;169;133;76
+La Peregrina,Buque,402,36,394,560,AUD,Sarah Rodriguez;Stacey Robinson;Spencer Paul,135;179;166;95;111
+El Kraken,Buque,33752,45,336,560,JPY,Julia Thomas;Michael Bowen;Pamela Montgomery,8;72
+El HMS Victory,Pasajero,14154,30,786,500,JPY,Kimberly Johnson;Greg Tanner,198;108;183;68;0
+La Pinta,Buque,1938,42,342,560,DKK,Jessica King,136;70;124;21;172;36
+Marea Alta,Carguero,252,40,359,630,CAD,Edward Boone;Tristan Johnston;Cindy Hill,152;117;63;85;123;33;158
+El Huáscar,Pasajero,2001,39,738,500,ZAR,Kristina Cooper;John Banks;Gabriela Smith,56;35
+Úrsula,Carguero,1250,47,354,630,DKK,Steven Thomas;Justin Hoffman,168;154;73
+El Tesoro perdido,Buque,22630,34,365,560,INR,Lori Lee DVM;George Warren;Dana Nguyen,96;140
+Barbablanca,Buque,95608,45,392,560,HUF,Heather Dyer,147;50
+El Caleuche,Carguero,144,47,390,630,GBP,Brenda Garcia;Andrea Ramirez,89;141;87;14
+Aguamarina,Pasajero,2001,40,791,500,ZAR,Jonathon Russell;Alexandra Price;Leah Parker,45;186;104;93;128
+La Santa María,Carguero,9706,42,369,630,PHP,Jeffrey Harris,13;192;195;37;139;24
+DCCaribeño,Pasajero,213,30,746,500,BGN,Catherine Conway;Lauren Higgins;Brian Norris,46;118;64
+Caribe,Buque,432,30,322,560,NZD,Stephanie Peters;Adam Marquez,122;191
+Royal Fortune,Carguero,3079,47,370,630,ZAR,Marissa Porter;Mark Brown,10;20
+La Niña,Buque,15044,35,377,560,PHP,Dr. Isaac White;Steven Jones,47;125;153;98;5;116
+Hurakán,Buque,22630,34,331,560,INR,Heather Palmer,54;22;40;3;25;55
+El Leviatán,Carguero,279,46,362,630,NZD,Mark Phillips;Mary Parker,175;17;102;6
+El Holandés errante,Carguero,1250,31,314,630,DKK,Jodi Ross;John Bell,145;114;31;129;34
+Carabela,Pasajero,40094,33,714,500,HUF,Brenda Cox;Cynthia Mcintosh;Jerome Stewart,137;51;196;42;134
+Ever Given,Buque,1812,39,396,560,BRL,Melissa Pratt;Manuel Figueroa;Ricky Garcia,1;18;91;130;143;112
+Tormenta,Buque,223,33,387,560,GBP,Julia Chang;Charles Mason;Robert Jones,151;78;103;164
+Barbanegra,Pasajero,168,34,758,500,AUD,Kendra Hull;Susan Bray;Gerald Anderson,106;65;94;144;119
+Perla Negra,Buque,4772,46,313,560,ZAR,Megan Sanders;Sarah Marsh,162;194;66;146
+Pachamama,Carguero,1250,42,327,630,DKK,Thomas Carroll,101;176;199;109;90;131
+El Aventura,Carguero,279,35,358,630,NZD,Tammy Shea;Brandon Nielsen,177;62;43;185
+Siete Mares,Pasajero,130,37,792,500,USD,Dylan Good,44;83;39
+Poseidón,Buque,509,44,395,560,BGN,Jessica Norman;Patricia Hughes,190;100;82;171;7;197
+Medusa,Carguero,200,42,398,630,USD,Roberto Perez,170;132;81
+El Bismarck,Pasajero,9490,43,710,500,INR,Kevin Hopkins;Larry Horne,58;29;88;163;97
+Moby Dick,Carguero,1169,46,366,630,BRL,Robert Lane;Ryan Foster;Joshua Peters,150;52;71;16
+Titanic,Buque,6851,43,346,560,CZK,Michelle Flores;Mandy Anderson,189;41;77;2
+Tritón,Pasajero,2873,36,731,500,CZK,Joe Palmer;Zachary Smith,4;126;61;142;38
+El Dorado,Pasajero,163,32,743,500,CAD,Sarah Acevedo;Katherine Fuller,80;32;174;74;60
