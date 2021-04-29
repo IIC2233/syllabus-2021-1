@@ -18,11 +18,11 @@ class VentanaCombate(QLabel):
         self.boton_frio = QPushButton("Frio")
         self.boton_defender = QPushButton("Defender")
         self.en_accion = False
-        self.rutas = {
+        self.rutas = rutas  # Rutas de sprites
+        self.rutas_iconos = {  # Rutas iconos
             f"personaje_{i}": ruta
             for i, ruta in enumerate(rutas_iconos, start=1)
         }
-        self.rutas_iconos = rutas_iconos
         self.estilo_botones = estilo_botones
         self.init_gui()
 
