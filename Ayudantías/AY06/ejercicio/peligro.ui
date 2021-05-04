@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>796</width>
+    <height>589</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="widget_peligro" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <widget class="QPushButton" name="boton_peligro">
+     <property name="geometry">
+      <rect>
+       <x>240</x>
+       <y>170</y>
+       <width>341</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>36</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 0, 0);</string>
+     </property>
+     <property name="text">
+      <string>PELIGRO</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="fondo_peligro">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>-110</y>
+       <width>801</width>
+       <height>701</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../imagenes/caution-background.jpg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <zorder>fondo_peligro</zorder>
+    <zorder>boton_peligro</zorder>
+   </widget>
+   <widget class="QWidget" name="widget_sorpresa" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <widget class="QLabel" name="gatito">
+     <property name="geometry">
+      <rect>
+       <x>-30</x>
+       <y>0</y>
+       <width>851</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="pixmap">
+      <pixmap>../imagenes/gatito.jpg</pixmap>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="boton_adopcion">
+     <property name="geometry">
+      <rect>
+       <x>210</x>
+       <y>420</y>
+       <width>401</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Arial Black</family>
+       <pointsize>20</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(170, 255, 255);
+color: rgb(255, 85, 127);</string>
+     </property>
+     <property name="text">
+      <string>Adoptar Gatito &lt;3</string>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>796</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuMenu">
+    <property name="title">
+     <string>Menu</string>
+    </property>
+    <addaction name="actionEsto_no_hace_nada"/>
+    <addaction name="actionEsto_tampoco"/>
+   </widget>
+   <widget class="QMenu" name="menuOtra_cosa">
+    <property name="title">
+     <string>Otra cosa</string>
+    </property>
+    <addaction name="actionHoli"/>
+   </widget>
+   <addaction name="menuMenu"/>
+   <addaction name="menuOtra_cosa"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionEsto_no_hace_nada">
+   <property name="text">
+    <string>Esto no hace nada</string>
+   </property>
+  </action>
+  <action name="actionEsto_tampoco">
+   <property name="text">
+    <string>Esto tampoco</string>
+   </property>
+  </action>
+  <action name="actionHoli">
+   <property name="text">
+    <string>Holi</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>boton_peligro</sender>
+   <signal>clicked()</signal>
+   <receiver>widget_sorpresa</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>410</x>
+     <y>291</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>400</x>
+     <y>301</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
