@@ -1,0 +1,8 @@
+Abr 13, 2021 09:22:34
+Jun 14, 2021 08:32:11
+May 20, 2021 10:12:54
+Dic 21, 2021 11:11:62
+WARNING Estamos cercanos a tener un problema.
+WARNING Otro warning!
+WARNING Casi un bug
+WARNING Tenga mucho cuidado
