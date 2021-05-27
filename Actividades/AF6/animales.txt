@@ -1,0 +1,51 @@
+nombre;especie;raza;edad;estatura;precio
+Lassie;perro;Poodle;3;56;25000
+Candy;gato;Angora Turco;5;20;20000
+Beethoven;perro;San Bernardo;2;75;30000
+Eros;perro;Dalmata;1;60;27000
+Garfield;gato;British Shorthair;6;25;22000
+Silvestre;gato;Gato Montes;3;22;20000
+Laika;perro;Mestizo;4;60;23000
+Niebla;pajaro;Arrendajo Azul;5;10;5000
+Donald;pajaro;Canario;2;7;7000
+Lucas;pajaro;Loro;4;12;8000
+Tambor;conejo;Rex;1;20;12000
+Cora;gato;Azul Ruso;5;24;23000
+Atenea;perro;San Bernardo;10;77;30000
+Scooby;perro;Gran Danes;2;70;29000
+Pantera;gato;Azul Ruso;4;26;23000
+Alita;pajaro;Canario;5;11;7000
+Hachiko;perro;Akita;3;66;350000
+Bolt;perro;West Highland White Terrier;4;40;25000
+Simba;gato;Chausie;8;27;23000
+Hamtaro;hamster;Chino;2;7;3000
+Bugs Bunny;conejo;Cabeza de Leon;1;12;10000
+Miko;hamster;Dorado;6;5.5;2000
+Snoopy;perro;Beagle;1;30;12000
+Goofy;perro;Mestizo;5;60.7;23000
+Tommy;gato;Chausie;2;23.2;23000
+Melody;pajaro;Arrendajo Azul;1;8.9;5000
+Lola;conejo;Blanco de Hotot;4;10;13000
+Duquesa;perro;West Highland White Terrier;2;33.4;25000
+Kitty;gato;Persa;3;22.2;27000
+Daisy;pajaro;Loro;6;12;8000
+Bolita;conejo;Blanco de Hotot;2;11;13000
+Piolin;pajaro;Petirrojo;5;7.2;2500
+Nala;gato;Angora Turco;3;22;20000
+Jade;perro;Gran Danes;4;101.5;29000
+Mufasa;gato;Azul Ruso;2;25;23000
+Pia;pajaro;Loro;1;14;8000
+Nube;conejo;Cabeza de Leon;3;20;10000
+Margarita;pajaro;Canario;4;11;7000
+Disha;perro;Beagle;2;80;12000
+Doraemon;gato;Angora Turco;5;30;20000
+Pio;pajaro;Arrendajo Azul;3;6.6;5000
+Hams;hamster;Chino;2;7.7;3000
+Trix;conejo;Rex;2;21.9;12000
+Harbin;hamster;Dorado;5;12;2000
+Godzilla;pajaro;Loro;3;14;8000
+Kiara;hamster;Ruso;5;6.8;4000
+Eggsorcist;pajaro;Canario;2;12.6;7000
+Rhino;hamster;Chino;1;12;3000
+Rosie;pajaro;Arrendajo Azul;3;11;5000
+Baby;hamster;Ruso;3;11;4000

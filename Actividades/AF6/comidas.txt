@@ -1,0 +1,25 @@
+nombre;especie;raza;precio;disponible
+Dog Chow;perro;Poodle;5000;True
+Cat Chow;gato;Angora Turco;10500;True
+Proplan;perro;San Bernardo;11000;False
+Purina;perro;Dalmata;8900;False
+Whiskas;gato;British Shorthair;18000;True
+Nutragold;gato;Gato Montes;20000;False
+Bird Chow;pajaro;Arrendajo Azul;9900;True
+Rabbit Chow;conejo;Rex;20000;True
+Cannes;perro;Gran Danes;12700;False
+Champion;gato;Azul Ruso;12500;True
+Royal Canin;perro;Akita;20000;True
+Eukanuba;perro;West Highland White Terrier;10000;False
+Super Cat;gato;Chausie;23000;False
+Hamster Chow;hamster;Chino;15700;True
+Zanahoria;conejo;Cabeza de Leon;15000;False
+Mazuri;hamster;Dorado;15500;True
+Pedigree;perro;Beagle;8700;False
+Acana;perro;Mestizo;15000;True
+Minino Plus;gato;Persa;10000;True
+Care +;conejo;Blanco de Hotot;7500;False
+Vivir;pajaro;Petirrojo;10000;True
+Tropican;pajaro;Loro;14000;False
+Prestige;pajaro;Canario;16500;False
+Brit;hamster;Ruso;4000;False
