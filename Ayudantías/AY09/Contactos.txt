@@ -1,0 +1,32 @@
+Peppa,Nachito Sánchez
+Paula Daza,Peppa
+Elvis Tek,Zoila Cerda
+Paula Daza,Pythoncita
+Nachito Sánchez,Elba Zurita
+Pythoncita,Paula Daza
+Xue Hua Piao Piao,Paul Daza
+Zoila Cerda,Nachito Sánchez
+Shakira,Pythoncita
+Batman,Elvis Tek
+Elba Zurita,Batman
+Nachito Sánchez,Elba Zurita
+Pythoncita,Paula Daza
+Elsa Pito,Marcia Ana
+Pythoncita,Pangui
+Elvis Tek,Paula Daza
+Xue Hua Piao Piao,Pangui
+Shakira,Peppa
+Peppa,Marcia Ana
+Shakira,Zoila Cerda
+Marcia Ana,Batman
+Zoila Cerda,Elba Zurita
+Armando Casas,Pangui
+Elvis Tek,Shakira
+Armando Casas,Marcia Ana
+Elba Zurita,Batman
+Pangui,Batman
+Armando Casas,Elvis Tek
+Batman,Shakira
+Shakira,Armando Casas
+Pangui,Shakira
+Xue Hua Piao Piao,Shakira
