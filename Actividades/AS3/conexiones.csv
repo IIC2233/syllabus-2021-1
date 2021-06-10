@@ -1,0 +1,36 @@
+lugar_1,lugar_2,peso
+DCCafetería,escuela primaria,1711
+DCCafetería,bar de Moe,1717
+DCCafetería,economuebles,1591
+Pizzeria de Louie,DCCasa,1871
+Pizzeria de Louie,repuestos Pinzas,676
+repuestos Pinzas,sala de electricidad,1456
+repuestos Pinzas,Zurdo mercado,865
+repuestos Pinzas,navegación,1095
+el observatorio,escuela primaria,2040
+el observatorio,Tienda del calabozo del androide y tarjetas de béisbol,536
+DCCampus,bar de Moe,2152
+DCCampus,tienda abandonada,1061
+DCCampus,economuebles,1641
+DCCampus,Monstruo-Mercado,1799
+DCCampus,Planta de energía nuclear,127
+DCCampus,sala de electricidad,955
+DCCampus,navegación,1933
+Tienda del calabozo del androide y tarjetas de béisbol,Planta de energía nuclear,99
+Tienda del calabozo del androide y tarjetas de béisbol,bar de Moe,1803
+DCCasa,KBBL Radio,680
+DCCasa,bar de Moe,2144
+DCCasa,sala de seguridad,1145
+bar de Moe,navegación,1551
+bar de Moe,escuela primaria,1716
+sala de electricidad,escuela primaria,2045
+sala de electricidad,economuebles,18
+sala de electricidad,navegación,1030
+navegación,club secreto de los magios,492
+navegación,Hamburguesas Krusty,1695
+club secreto de los magios,tienda abandonada,530
+club secreto de los magios,Planta de energía nuclear,1817
+KBBL Radio,Zurdo mercado,766
+KBBL Radio,tienda abandonada,1242
+Zurdo mercado,Planta de energía nuclear,966
+Hamburguesas Krusty,Planta de energía nuclear,849

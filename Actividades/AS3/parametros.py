@@ -1,0 +1,6 @@
+path_mafioso = 'mafiosos.csv'
+path_lugares = 'lugares.csv'
+path_conexiones = 'conexiones.csv'
+frase_secretario = 'Creces en una casa siciliana convertirte en actor no es un gran salto'
+frase_lider_1 = 'Amigos son aquellos que te ven llorando y te dicen: ¿A quién matamos?'
+frase_lider_2 = 'Las amenazas sólo son armas para el amenazado'
