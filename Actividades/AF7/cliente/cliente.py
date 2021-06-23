@@ -34,6 +34,9 @@ class Cliente:
 
     def iniciar_cliente(self):
         # Completar
+        # IMPORTANTE: Si la conexión es exitosa, además de hacer lo que indica 
+        # en el enunciado, debes invocar al método mostrar_login de self.controlador
+        # self.controlador.mostrar_login()
         pass
 
     def escuchar_servidor(self):

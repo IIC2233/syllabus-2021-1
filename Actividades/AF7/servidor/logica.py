@@ -97,7 +97,7 @@ class Logica:
             self.log(f"ERROR: mensaje de cliente {id_cliente} no cumple el formato.")
             return dict()
         respuesta = dict()
-        destinatarios = list()
+        destinatarios = [id_cliente]
         if comando == "ingreso":
             nombre_usuario = mensaje["nombre_usuario"]
             with self.ingreso_lock:
