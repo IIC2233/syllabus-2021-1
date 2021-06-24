@@ -72,7 +72,7 @@ def cargar_mensajes(path):
         path (str): Path del archivo a decodificar (encoded.json)
 
     Retorna:
-        dict: Resultado de cargar y decodificar el archivo JSON con la
+        list[Mensaje]: Resultado de cargar y decodificar el archivo JSON con la
             decodificación personalizada. Contiene las instancias de los
             mensajes
     """

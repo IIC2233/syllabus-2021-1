@@ -2,13 +2,13 @@
 Este módulo contiene a la clase FilterBox y la función obtener_paquete_secreto
 Contiene la lógica necesaria para aplicar los filtros a las imágenes
 
-Corresponde a la parte de Pickle y Bytes
+Corresponde a la parte de Pickle
 """
 import pickle
-from manejo_bytes import int_desde_bytes, tuplas_desde_bytes, bytes_desde_tuplas, organizar_bmp
-from parametros import MINIMALISM_THRESHOLD, CENSOR_MUTIPLIER, RUTA_IMAGEN, ALPHA_PUSH_VALUE
 from math import sqrt
-from os import path
+from manejo_bytes import int_desde_bytes, tuplas_desde_bytes, bytes_desde_tuplas, organizar_bmp
+from parametros import (MINIMALISM_THRESHOLD, CENSOR_MUTIPLIER, ALPHA_PUSH_VALUE,
+                        RUTA_IMAGEN_TEST, RUTA_RR_GIVE_UP)
 
 
 def obtener_paquete_secreto():
@@ -19,8 +19,7 @@ def obtener_paquete_secreto():
         bytes: resultado de serializar la instancia de FilterBox, corresponde
             al paquete secreto
     """
-    # Debes completar esta función
-    pass
+    # COMPLETAR
 
 
 class FilterBox:
@@ -29,26 +28,31 @@ class FilterBox:
     interfaz del programa
     """
 
-    def __init__(self, *args, **kwargs):
+    def __init__(self):
         # NO MODIFICAR
-        super().__init__(*args, **kwargs)
         self.diccionario_filtros = {
             "lighten": self.lighten,
             "darken": self.darken,
             "shuffle": self.shuffle,
             "colorflip": self.colorflip,
             "pepawave": self.pepawave_init,
+            "alphaShuffle": self.alpha_shuffle,
             "MrStark": self.mr_stark_init,
             "iDontWannaGo": self.idont_wanna_go_init,
             "censor": self.censor_init,
             "minimalism": self.minimalism,
             "v-flip": self.vertical_flip,
-            "alphaShuffle": self.alpha_shuffle
+            "scramble": self.scramble,
+            "woodstock": self.woodstock,
+            "havoc": self.havoc,
+            "sidestep": self.sidestep,
+            "displace": self.displace
         }
-        self.filtros_especiales = ['pepawave', 'MrStark', 'v-flip', 'iDontWannaGo', "censor"]
+        self.filtros_especiales = ['pepawave', 'MrStark', 'v-flip',
+                                   'iDontWannaGo', 'censor', 'reset']
         self.step_actual = 0
         self.tamano_step = 0
-        self.datos_imagen = {'w': 0, 'h': 0}
+        self.datos_imagen = {'w': 0, 'h': 0, 'size': 0}
 
     # //-//-//-//-//-//-//-//-//
     # \\ Métodos parte pickle \\
@@ -56,19 +60,26 @@ class FilterBox:
 
     def __getstate__(self):
         """
-        supongamos el siguiente orden de instrucciones de codificacón:
-         (los cambios se hacen en el atributo diccionario_filtros)
-         1- En el diccionario filtros, se reemplazan todos los values por el filtro_bomba
-         2- Se agrega una llave "TOP-SECRET", que sus contenidos son una lista de tuplas,
-         cuyo primer valor es una llave de diccionario filtros y el segundo la
-         funcion correspondiente
-         2- Se cambian los keys del dicccinario_metodo al string en reversa.
-        :return: dict
+        Genera un nuevo diccionario de estado usado durante la serialización
+        con pickle. Dicho diccionario debe generarse en base a los pasos pedidos
+        en el enunciado.
+
+        Retorna:
+            dict: El diccionario representando el estado del objecto
         """
-        pass
+        # COMPLETAR
 
     def __setstate__(self, state):
-        pass
+        """
+        Carga el diccionario decodificado en la deserialización con pickle en la
+        instancia. Antes de aplicar el diccionario en la instancia, debes
+        aplicar los pasos especificados en el enunciado (que corresponden a lo
+        "inverso" de los pasos pedidos en __getstate__).
+
+        Argumentos:
+            state (dict): diccionario de estado decodificado por pickle
+        """
+        # COMPLETAR
 
     # //-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//-//
     # \\                          MÉTODOS IMPORTANTES                         \\
@@ -77,10 +88,14 @@ class FilterBox:
     @staticmethod
     def aumento_seguro(original, increase_factor):
         """
-        Aumenta un int reduciendo la cantidad de información perdida.
-        :param original: el int a aumentar
-        :param increase_factor: factor de aumento
-        :return:
+        Aumenta un int reduciendo la cantidad de información perdida. Usado en
+        ciertos filtros.
+
+        Argumentos:
+            original (int): el número original a incrementar
+            increase_factor (float): el número por el cual ponderar al original
+        Retorna:
+            int: el número incrementado de manera segura:return:
         """
         if increase_factor < 0:
             raise ValueError("increase_factor must be a positive float or integer")
@@ -278,8 +293,7 @@ class FilterBox:
 
     @staticmethod
     def rr_reader(tup):
-        image_path = path.join('.rrdata', 'updata.rr')
-        with open(image_path, 'rb') as file:
+        with open(RUTA_RR_GIVE_UP, 'rb') as file:
             reset_bytes = bytearray(file.read())
         return reset_bytes[::-1]
 
@@ -299,15 +313,26 @@ class FilterBox:
 
 
 if __name__ == "__main__":
-    # Crear filterbox
-    filterbox = FilterBox()
-    # Codificar
-    encoded_filterbox = pickle.dumps(filterbox)
+    print("-"*30, "TESTS", "-"*30)
+    print("-" * 20, "TESTS obtener_paquete_secreto y __getstate__", "-"*20)
+    encoded_filterbox = obtener_paquete_secreto()
+    if not isinstance(encoded_filterbox, bytes):
+        raise AssertionError("obtener_paquete_secreto o __getstate__ entregan un tipo incorrecto!")
+    print("obtener_paquete_secreto parece estar correcto!")
     # Decodificar
+    print("-" * 20, "TESTS obtener_paquete_secreto y __getstate__", "-"*20)
     decoded_filterbox = pickle.loads(encoded_filterbox)
+    if not isinstance(decoded_filterbox, FilterBox):
+        raise AssertionError("__setstate__ entrega un tipo incorrecto!")
     # Probar filtro
-    with open(RUTA_IMAGEN, "rb") as bmp_file:
+    with open(RUTA_IMAGEN_TEST, "rb") as bmp_file:
         bytes_imagen = bmp_file.read()
     res = decoded_filterbox.modificar_bytes("pepawave", bytes_imagen)
-    with open("test_out.bmp", "wb") as out_file:
+    with open("testimage_out.bmp", "wb") as out_file:
         out_file.write(res)
+    print("Imagen 'testimage_out.bmp' generada correctamente!")
+    print("--> Verifica la imagen 'testimage_out.bmp', y compárala con " +
+          "'testimage.bmp para comprobar si se aplicó el filtro correctamente")
+    print("NOTA: Estos tests revisan que se las funciones implementadas no se caigan " +
+          "y el FilterBox obtenido cumpla su objetivo de aplicar el filtro, pero no " +
+          "se garantiza que las funciones __getstate__ y __setstate__ estén correctas")

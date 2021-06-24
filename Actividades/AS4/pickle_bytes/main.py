@@ -11,6 +11,7 @@ from backend.decodificador import Decoder
 from frontend.interfaz import VentanaPrincipal
 from filtros import obtener_paquete_secreto
 from parametros import DIMENSIONES_VENTANA, RUTA_IMAGEN, RUTA_RR_LET_DOWN
+from manejo_bytes import recuperar_contenido
 
 if __name__ == "__main__":
 
@@ -28,7 +29,8 @@ if __name__ == "__main__":
     decoder = Decoder(pickled_filters)
 
     # Instanciar ventana
-    ventana = VentanaPrincipal(DIMENSIONES_VENTANA, RUTA_IMAGEN, RUTA_RR_LET_DOWN)
+    ventana = VentanaPrincipal(DIMENSIONES_VENTANA, RUTA_IMAGEN,
+                               RUTA_RR_LET_DOWN, recuperar_contenido)
 
     # Conectar señales
     ventana.signal_pedir_imagen.connect(decoder.aplicar_filtro)

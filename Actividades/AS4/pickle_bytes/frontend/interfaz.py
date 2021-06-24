@@ -19,10 +19,11 @@ class VentanaPrincipal(QWidget):
 
     signal_pedir_imagen = pyqtSignal(str, bytearray)
 
-    def __init__(self, dimensions, image_path, rr_path, *args, **kwargs):
+    def __init__(self, dimensions, image_path, rr_path, fix_function, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.applied_filters = ""
         self.rr_data = ""
+        self.bytes_fixer = fix_function
         self.setGeometry(*dimensions)
         self.image_path = image_path
         self.rr_path = rr_path
@@ -53,11 +54,15 @@ class VentanaPrincipal(QWidget):
         Abre la imagen sobre la cual se aplicarán los filtros, y se aplica el
         guardan sus bytes.
         """
-        self.imagen.setPixmap(QPixmap(self.image_path))
-        self.imagen.resize(self.imagen.sizeHint())
         self.applied_filters = ""
         with open(self.image_path, "rb") as file:
-            self.image_bytes = bytearray(file.read())
+            original_bytes = bytearray(file.read())
+        try:
+            fixed = self.bytes_fixer(original_bytes)
+            self.actualizar_imagen(fixed)
+        except ValueError:
+            self.actualizar_imagen(original_bytes)
+        self.imagen.resize(self.imagen.sizeHint())
         with open(self.rr_path, "rt") as file:
             self.rr_data = bytearray.fromhex(file.read()).decode()
 
